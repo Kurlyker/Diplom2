@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Diplom:jar">
+    <output-path>$USER_HOME$/Мои документы</output-path>
+    <root id="archive" name="Diplom.jar">
+      <element id="module-output" name="Diplom" />
+    </root>
+  </artifact>
+</component>

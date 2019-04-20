@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.popovich.MemoriesOfPopovich.ControllerMemoriesOfPopovich">
+   <children>
+      <Button alignment="BASELINE_LEFT" layoutX="61.0" layoutY="443.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="637.0" style="-fx-border-color: #000000; -fx-border-radius: 30; -fx-background-radius: 30;" text="1) визнання буквинського педагога як фахівця освітньої галузі" wrapText="true">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Button alignment="BASELINE_LEFT" layoutX="61.0" layoutY="543.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="637.0" style="-fx-border-color: #000000; -fx-background-radius: 30; -fx-border-radius: 30;" text="2) наукові розвідки про діяльність педагога як політичного й громадсько-просвітницького діяча" wrapText="true">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Button layoutX="16.0" layoutY="14.0" mnemonicParsing="false" onAction="#ToHomePopovich" prefHeight="34.0" prefWidth="90.0" text="Назад" />
+      <Text layoutX="705.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="«Надій, які покладають на мене, не годен сповнити я сам один, а тільки в спілці зі згідною і щирою громадою.»" textAlignment="JUSTIFY" wrappingWidth="529.064453125">
+         <font>
+            <Font size="25.0" />
+         </font></Text>
+      <Text layoutX="765.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Омелян Попович, часопис «Буковина», 1905р." textAlignment="JUSTIFY">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="72.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="       Окремі аспекти життєдіяльності О.Поповича неодноразово ставали предметом наукових розвідок. Адже педагог став відомою людиною у краї у кінці ХІХ століття. Його сучасниця, громадська діячка, педагог і письменниця Посол Буковинського сейму М.Василько пишався тим, що йому довелося тісно співпрацювати з надзвичайно скромною людиною, «взірцем чеснот і доброчинності»  («Буковина», 1905). Всі, хто писав про О.Поповича, підкреслювали його старанність, працьовитість, відданість національній справі.&#10;&#9;Сучасна дослідниця Л. Платаш (2009) виокремила два напрями дослідження персоналії Омеляна Поповича: " textAlignment="JUSTIFY" wrappingWidth="1135.064453125">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

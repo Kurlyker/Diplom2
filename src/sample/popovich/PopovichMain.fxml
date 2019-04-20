@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #e6e6ff;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.popovich.PopovichMainController">
+   <children>
+      <ImageView cache="true" fitHeight="504.0" fitWidth="489.0" layoutX="99.0" layoutY="79.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../popovich.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="448.0" layoutY="67.0" prefHeight="78.0" prefWidth="783.0" text="Попович Омелян Олександрович">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Text layoutX="448.0" layoutY="185.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="– учитель-практик, крайовий шкільний інспектор Буковини та крайовий інспектор учительських семінарій і народних шкіл “Рідної школи” у Львові, член Буковинської крайової шкільної ради, перший директор іспитової комісії для народних і виділових шкіл, довголітній посол Буковинського сейму, член Крайового виділу, редактор і співробітник багатьох українських часописів і видавництв у Чернівцях, віце-президент Української Національної Ради у Західноукраїнській Народній Республіці. " textAlignment="JUSTIFY" wrappingWidth="819.0000153183937">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="uuu" style="-fx-background-color: #e6e6ff;" translateX="-350.0">
+         <children>
+            <Button fx:id="buttonrot" layoutX="349.0" mnemonicParsing="false" onAction="#RotKlick" prefHeight="720.0" prefWidth="50.0" style="-fx-border-radius: 10; -fx-border-color: #5b5aa8; -fx-background-radius: 10;" />
+            <Label centerShape="false" layoutX="39.0" layoutY="6.0" prefHeight="78.0" prefWidth="298.0" text="Життєдіяльність Омеляна Поповича" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="172.0" text="2) Життєвий шлях Омеляна поповича">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label layoutX="15.0" layoutY="231.0" prefHeight="66.0" prefWidth="332.0" text="3) Омелян Попович ШОТОТАМ керівник українського шкільництва на Буковині" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label layoutX="15.0" layoutY="334.0" prefHeight="53.0" prefWidth="332.0" text="4) Омелян Попович про методичні засоби навчання і виховання в школі" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label layoutX="16.0" layoutY="419.0" prefHeight="26.0" prefWidth="325.0" text="5)Підручники Омеляна Поповича">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label layoutX="18.0" layoutY="490.0" prefHeight="26.0" prefWidth="325.0" text="6) Літературні праці Омеляна Поповича">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label layoutX="20.0" layoutY="559.0" prefHeight="53.0" prefWidth="318.0" text="7) Видавнича діяльність Омеляна Поповича" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label layoutX="18.0" layoutY="633.0" prefHeight="59.0" prefWidth="325.0" text="8) Громадянська просвітня розповсюдженість Омеляна Поповича" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Button layoutX="8.0" layoutY="12.0" mnemonicParsing="false" onAction="#ToLifePopovich" prefHeight="78.0" prefWidth="341.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 10;" text="Життєдіяльність Омеляна Поповича" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="90.0" mnemonicParsing="false" onAction="#ToMemoriesOfPopovich" prefHeight="78.0" prefWidth="341.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 10;" text="Омелян Попович в спогадах і свідченнях" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Button layoutX="1188.0" layoutY="14.0" mnemonicParsing="false" onAction="#ToHome" prefHeight="53.0" prefWidth="78.0" text="На головну" />
+   </children>
+</AnchorPane>

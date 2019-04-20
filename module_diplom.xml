@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_diplom" default="compile.module.diplom">
+  <dirname property="module.diplom.basedir" file="${ant.file.module_diplom}"/>
+  
+  <property name="module.jdk.home.diplom" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.diplom" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.diplom" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.diplom" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="diplom.output.dir" value="${module.diplom.basedir}/out/production/Diplom"/>
+  <property name="diplom.testoutput.dir" value="${module.diplom.basedir}/out/test/Diplom"/>
+  
+  <path id="diplom.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="diplom.module.production.classpath">
+    <path refid="${module.jdk.classpath.diplom}"/>
+  </path>
+  
+  <path id="diplom.runtime.production.module.classpath">
+    <pathelement location="${diplom.output.dir}"/>
+  </path>
+  
+  <path id="diplom.module.classpath">
+    <path refid="${module.jdk.classpath.diplom}"/>
+    <pathelement location="${diplom.output.dir}"/>
+  </path>
+  
+  <path id="diplom.runtime.module.classpath">
+    <pathelement location="${diplom.testoutput.dir}"/>
+    <pathelement location="${diplom.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.diplom">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.diplom">
+    <patternset refid="excluded.from.module.diplom"/>
+  </patternset>
+  
+  <path id="diplom.module.sourcepath">
+    <dirset dir="${module.diplom.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.diplom" depends="compile.module.diplom.production,compile.module.diplom.tests" description="Compile module Diplom"/>
+  
+  <target name="compile.module.diplom.production" depends="register.custom.compilers" description="Compile module Diplom; production classes">
+    <mkdir dir="${diplom.output.dir}"/>
+    <javac2 destdir="${diplom.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.diplom}/javac">
+      <compilerarg line="${compiler.args.diplom}"/>
+      <bootclasspath refid="diplom.module.bootclasspath"/>
+      <classpath refid="diplom.module.production.classpath"/>
+      <src refid="diplom.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.diplom"/>
+    </javac2>
+    
+    <copy todir="${diplom.output.dir}">
+      <fileset dir="${module.diplom.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.diplom.tests" depends="register.custom.compilers,compile.module.diplom.production" description="compile module Diplom; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.diplom" description="cleanup module">
+    <delete dir="${diplom.output.dir}"/>
+    <delete dir="${diplom.testoutput.dir}"/>
+  </target>
+</project>
