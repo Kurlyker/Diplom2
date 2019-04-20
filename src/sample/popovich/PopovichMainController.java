@@ -50,11 +50,11 @@ public class PopovichMainController {
         appStage.show();
     }
     public void ToMemoriesOfPopovich(ActionEvent actionEvent) throws  IOException, InterruptedIOException{
-        Parent blah = FXMLLoader.load(getClass().getResource("MemoriesOfPopovich/MemoriesOfPopovich.fxml"));
-        Scene scene = new Scene(blah);
-        Stage appStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        appStage.setScene(scene);
-        appStage.show();
+       // Parent blah = FXMLLoader.load(getClass().getResource("MemoriesOfPopovich/MemoriesOfPopovich.fxml"));
+       // Scene scene = new Scene(blah);
+       // Stage appStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+      //  appStage.setScene(scene);
+     //   appStage.show();
     }
 
 }
